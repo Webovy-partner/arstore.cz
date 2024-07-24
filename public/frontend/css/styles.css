@@ -1,0 +1,38 @@
+.accordion-header button {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.accordion-body .form-label {
+  font-weight: 400;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.btn-trash {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4px;
+}
+
+.extended-input-group {
+  position: relative;
+}
+.extended-input-group input {
+  padding-right: 55px;
+}
+
+.form-control {
+  line-height: 1.8;
+}
+
+[data-bs-theme=dark] .form-control::placeholder {
+  color: #3a475e;
+}
