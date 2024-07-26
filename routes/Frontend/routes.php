@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\FrontendController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,10 +11,7 @@ Route::get('/', function () {
 Route::get('/blog', [FrontendController::class, 'index'])->name('frontend.blog');
 Route::get('/blog/{id}', [FrontendController::class, 'show'])->name('frontend.blog-detail');
 
-Route::get('/kontakt', function () {
-    return view('frontend.pages.contact');
-})->name('frontend.contact');
+Route::get('/kontakt', [FrontendController::class, 'contact'])->name('frontend.contact');
+Route::post('/kontakt/odeslat', [FrontendController::class, 'submitContactForm'])->name('frontend.contact.submit');
 
-Route::get('/cenik', function () {
-    return view('frontend.pages.price-list');
-})->name('frontend.price-list');
+Route::get('/cenik', [FrontendController::class, 'cenikShow'])->name('frontend.price-list');

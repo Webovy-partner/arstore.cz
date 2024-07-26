@@ -1,0 +1,38 @@
+footer{
+    .container > div{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        a{
+            font-size: 24px;
+            font-weight: 300;
+            color: #202020;
+            position: relative;
+        }
+    }
+
+    .container >a {
+        position: relative;
+        height: 50px;
+        left: 20px;
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+            left: 50%;
+            transition: .3s;
+            top: 50%;
+            transform: translate(-50%) translateY(-50%);
+            z-index: -1;
+            border-radius: 50%;
+            background-color: #f3feb2;
+        }
+    }
+}

@@ -18,7 +18,7 @@
                         </div>
                         <div class="col-3">
                             <div class="text-center mb-n5">
-                                <img src="{{ asset('admin/assets/images/breadcrumb/ChatBc.png') }}" alt=""
+                                <img src="{{ asset('/admin/assets/images/breadcrumb/ChatBc.png') }}" alt=""
                                     class="img-fluid mb-n4" />
                             </div>
                         </div>

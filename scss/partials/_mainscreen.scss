@@ -1,0 +1,84 @@
+body > .container{
+    margin-top: 80px;
+    @media screen and (min-width: $show_mobile_menu_at) {
+        margin-top: 130px;
+    }
+}
+
+.loga{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    border: 1px solid $black;
+    border-left: unset;
+    border-right: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+    @media screen and (max-width: 550px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.form{
+    border-radius: 60px;
+    border: 2px solid #202020;
+    padding: 60px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 73px;
+    margin-top: 48px;
+
+    opacity: 0;
+    animation: opacity 1.5s .2s ease-in forwards;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 60px 30px;
+    }
+
+    input, textarea{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 28.18px;
+        text-align: left;
+        display: flex;
+        border: unset;
+        border-bottom: 2px solid $black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &:focus{
+            outline: unset;
+        }
+        &::placeholder{
+            color: #797979;
+        }
+    }
+
+    button{
+        max-width: 240px ;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #202020;
+        color: white;
+    }
+
+    textarea{
+        border: 2px solid $black;
+        font-family: 'Raleway';
+        border-radius: 0 60px 60px 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.partners{
+    text-align: center;
+}

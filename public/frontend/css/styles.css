@@ -22,6 +22,13 @@
   right: 4px;
 }
 
+.btn-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 57px;
+}
+
 .extended-input-group {
   position: relative;
 }

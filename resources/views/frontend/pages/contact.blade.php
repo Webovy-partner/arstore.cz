@@ -32,13 +32,22 @@
         </div>
 
         <div class="container">
-            <form action="" class="form">
+
+            <form action="{{ route('frontend.contact.submit') }}" method="POST" class="form">
+                @csrf
                 <input type="text" name="name" placeholder="Jméno*" required />
                 <input type="text" name="surname" placeholder="Příjmení*" required />
+                <!-- Skrýváme vstupní pole pro cenu -->
+                <input type="hidden" name="price" value="{{ $priceId ?? '' }}" hidden />
                 <input type="text" name="phone" placeholder="Telefon" />
                 <input type="email" name="mail" placeholder="E-mail" />
-                <textarea name="" id="" cols="30" rows="10" placeholder="Zpráva*" required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Zpráva*" required></textarea>
                 <button type="submit" class="btn-green">Odeslat</button>
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
             </form>
 
             <div class="reseninamiru">
