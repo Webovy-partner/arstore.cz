@@ -45,7 +45,7 @@ class FrontendController extends Controller
         ]);
 
         // Odeslání e-mailu
-        Mail::to('sztefek.jan@seznam.cz')->send(new ContactFormMail($validated));
+        Mail::to('adam.bosak@onixia.cz')->send(new ContactFormMail($validated));
 
         // Přesměrování s úspěšnou zprávou
         return redirect()->route('frontend.contact')
