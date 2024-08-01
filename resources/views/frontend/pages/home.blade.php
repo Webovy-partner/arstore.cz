@@ -60,7 +60,7 @@
                             zákazníci vidět, jak se váše produkty budou vyjímat přímo ve svých
                             domovech. To znamená rychlejší prodeje a vyšší zisky pro vás, a
                             lepší představu o podobě produktu a větší spokojenost s procesem
-                            nákupu pro vaše zákazníky. To je AR Srore!</p>
+                            nákupu pro vaše zákazníky. To je AR Store!</p>
                     </div>
                     <img src="{{ asset('frontend/images/image-2.jpg') }}" class="desktop-hidden mb-30" alt="" />
                     <div class="bg-black br-top mb-30 text-white">
