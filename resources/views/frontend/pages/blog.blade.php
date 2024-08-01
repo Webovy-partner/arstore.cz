@@ -34,7 +34,7 @@
         <div class="container">
 
             <div class="blog-posts">
-                @foreach ($posts as $post)
+                @forelse ($posts as $post)
                     <a href="{{ route('frontend.blog-detail', $post->id) }}" class="blog__item">
                         <div class="blog__item-image">
                             @if ($post->image)
@@ -53,22 +53,22 @@
                             </div>
                         </div>
                     </a>
-                @endforeach
+                @empty
+                    <p class="cenik-info">Příspěvky nenalezeny.</p>
+                @endforelse
 
             </div>
         </div>
 
         <footer>
             <div class="container df jst-b">
-                <a href="/"><img src="{{ asset('frontend//public/img/logo.svg') }}" alt=""
-                        height="50" /></a>
+                <a href="/"><img src="{{ asset('frontend/images/logo.svg') }}" alt="" height="50" /></a>
                 <div>
                     <div class="icons">
                         <a href="https://www.linkedin.com/company/atelier-onixia/mycompany/" target="_blank"><img
-                                src="{{ asset('frontend//public/img/linkedin.png') }}" height="30" alt="linkedin" /></a>
+                                src="{{ asset('frontend/images/linkedin.png') }}" height="30" alt="linkedin" /></a>
                         <a href="https://www.instagram.com/atelier_onixia/" target="_blank"><img
-                                src="{{ asset('frontend//public/img/instagram.png') }}" height="30"
-                                alt="Instagram" /></a>
+                                src="{{ asset('frontend/images/instagram.png') }}" height="30" alt="Instagram" /></a>
                     </div>
                     <a href="tel:+420739454497">+420 739 454 497</a>
                     <a href="mailto:adam.bosak@arstore.cz">adam.bosak@arstore.cz</a>
