@@ -1,6 +1,3 @@
 [submodule "w-admin"]
 	path = w-admin
 	url = https://github.com/Webovy-partner/W-Admin
-[submodule "admin"]
-	path = admin
-	url = https://github.com/Webovy-partner/W-Admin
