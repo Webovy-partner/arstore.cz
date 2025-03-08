@@ -15,8 +15,8 @@
                 <a href="/" class="logo mobile"><img src="{{ asset('frontend/images/logo.svg') }}" alt="" /></a>
                 <a href="/" class="logo pc"><img src="{{ asset('frontend/images/logo-pc.png') }}" alt="" /></a>
                 <nav :class="menuOpen ? 'active' : ''">
-                    <a href="/#ukazky" class="text-graylight text-18 text-light">Features</a>
-                    <a class="text-graylight text-18 text-light" href="{{ route('frontend.blog') }}">Blog</a>
+                    <a href="/" class="text-graylight text-18 text-light">Přehled</a>
+                    
                     <a href="{{ route('frontend.price-list') }}" class="text-graylight text-18 text-light">Ceník</a>
                     <a href="{{ route('frontend.contact') }}" class="text-graylight text-18 text-light">Kontakt</a>
                 </nav>
@@ -52,9 +52,7 @@
 
             <div class="reseninamiru">
                 <h1 class="text-50 text-light text-underline">Řešení na míru</h1>
-                <p>Nevybrali jste si z naší nabídky? Nevadí, rádi pro Vás vytvoříme
-                    řešení na míru. Nechcte nám na sebe kontakt a obratem se Vám
-                    ozveme!</p>
+                <p>Nevybrali jste si z naší nabídky? Nevadí, rádi pro Vás vytvoříme řešení na míru. Nechte nám na sebe kontakt a obratem se Vám ozveme!</p>
                 <a href="tel:+420739454497" class="btn-green">Rádi voláte? <br />+420 739 454 497 >></a>
             </div>
         </div>

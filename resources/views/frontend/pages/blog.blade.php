@@ -15,8 +15,8 @@
                 <a href="/" class="logo mobile"><img src="{{ asset('frontend/images/logo.svg') }}" alt="" /></a>
                 <a href="/" class="logo pc"><img src="{{ asset('frontend/images/logo-pc.png') }}" alt="" /></a>
                 <nav :class="menuOpen ? 'active' : ''">
-                    <a href="/#ukazky" class="text-graylight text-18 text-light">Features</a>
-                    <a class="text-graylight text-18 text-light" href="{{ route('frontend.blog') }}">Blog</a>
+                    <a href="/" class="text-graylight text-18 text-light">Přehled</a>
+                    
                     <a href="{{ route('frontend.price-list') }}" class="text-graylight text-18 text-light">Ceník</a>
                     <a href="{{ route('frontend.contact') }}" class="text-graylight text-18 text-light">Kontakt</a>
                 </nav>

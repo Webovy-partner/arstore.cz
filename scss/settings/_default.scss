@@ -189,7 +189,7 @@ p{
             .cenik__item-ok{
                 p{
                     &::after{
-                        background-image: url('/images/check-green.svg');
+                        background-image: url('frontend/images/check-green.svg');
                     }
                 }
             }
@@ -220,7 +220,7 @@ p{
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
-                    background-image: url('/images/check.svg');
+                    background-image: url('frontend/images/check.svg');
                     background-size: contain;
                     background-repeat: no-repeat;
                 }

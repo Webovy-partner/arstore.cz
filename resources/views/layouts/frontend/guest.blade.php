@@ -41,6 +41,8 @@
     <link rel="preconnect" href="https://www.arstore.cz/blog/">
     <link rel="preconnect" href="https://www.arstore.cz/cenik/">
     <link rel="preconnect" href="https://www.arstore.cz/kontakt/">
+
+    @vite('resources/css/app.scss')
     @livewireStyles
     @livewireScripts
 </head>

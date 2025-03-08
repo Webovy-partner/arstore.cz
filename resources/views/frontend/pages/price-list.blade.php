@@ -11,8 +11,8 @@
                 <a href="/" class="logo mobile"><img src="{{ asset('frontend/images/logo.svg') }}" alt="" /></a>
                 <a href="/" class="logo pc"><img src="{{ asset('frontend/images/logo-pc.png') }}" alt="" /></a>
                 <nav :class="menuOpen ? 'active' : ''">
-                    <a href="/#ukazky" class="text-graylight text-18 text-light">Features</a>
-                    <a class="text-graylight text-18 text-light" href="{{ route('frontend.blog') }}">Blog</a>
+                    <a href="/" class="text-graylight text-18 text-light">Přehled</a>
+                    
                     <a href="{{ route('frontend.price-list') }}" class="text-graylight text-18 text-light">Ceník</a>
                     <a href="{{ route('frontend.contact') }}" class="text-graylight text-18 text-light">Kontakt</a>
                 </nav>
@@ -66,16 +66,11 @@
                     </div>
                 @endforeach
             </div>
-            <p class="cenik-info"><i>Minmální délka naších služeb je <b>6 měsíců</b>. Cena tvorby 3D modelů <b>není
-                        zahrnuta</b> v
-                    ceníku
-                    a je
-                    stanovena individuálně podle jejich náročnosti.</i></p>
+            <p class="cenik-info"><i>Minimální délka našich služeb je <strong>6 měsíců</strong>. Cena <strong>tvorby 3D modelů není součástí ceníku</strong> a je stanovena individuálně podle náročnosti.</i></p>
 
             <div class="reseninamiru">
                 <h1 class="text-50 text-light text-underline">Řešení na míru</h1>
-                <p>Nevybrali jste si z naší nabídky? Nevadí, rádi pro Vás vytvoříme řešení na míru.
-                    Nechcte nám na sebe kontakt a obratem se Vám ozveme!</p>
+                <p>Nevybrali jste si z naší nabídky? Nevadí, rádi pro Vás vytvoříme řešení na míru. Nechte nám na sebe kontakt a obratem se Vám ozveme!</p>
                 <a href="{{ route('frontend.contact') }}" class="btn-green">Kontaktujte nás >></a>
             </div>
         </div>

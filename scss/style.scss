@@ -23,7 +23,7 @@ $black: #202020;
     margin-bottom: 120px;
 
     @media screen and (max-width: 1500px) {
-        grid-template-columns: .7fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     @media screen and (max-width: 1300px) {
@@ -113,7 +113,7 @@ $black: #202020;
 
     &__right{
         display: grid;
-        grid-template-columns: 384px 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
         @media screen and (max-width: 1180px) {
             grid-template-columns: 1fr;
@@ -402,7 +402,6 @@ body{
         margin-top: 50px;
         @media screen and (max-width: 768px) {
             margin-top: 20px;
-            display: none;
         }
     }
     &-mobile{

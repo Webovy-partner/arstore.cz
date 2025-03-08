@@ -669,6 +669,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .usecase-title {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .usecase-title {
     font-size: 28px !important;
   }
 }
