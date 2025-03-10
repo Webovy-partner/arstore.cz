@@ -2,7 +2,6 @@ slideTime = 10000;
 pos = 1;
 const d = new Date();
 let year = d.getFullYear();
-$("#copyright").text(year)
 
 $(document).ready(function(){
     backgroundSlide = $('#slideshow__main').lightSlider({

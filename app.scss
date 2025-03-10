@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icons {
+    img {
+        width: 30px !important;
+        height: auto !important;
+    }
+}
+
+.customimg {
+    object-fit: cover !important;
+    object-position: top center;
+    aspect-ratio: 333/427 !important;
+
+    @media screen and (min-width: 1535px) {
+        aspect-ratio: 356/427 !important;
+    }
+}
+
+.ukazky-btn {
+    font-size: 400% !important;
+    display: flex;
+
+    img {
+        flex-grow: 1;
+        width: 20% !important;
+        height: auto !important;
+        max-width: 100px;
+    }
+
+    &.mobile {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 263% !important;
+    }
+}
+
+.secondbox {
+    &__right {
+        & > div {
+            display: flex;
+            flex-direction: column;
+
+            img:last-of-type {
+                width: auto;
+                height: auto;
+                flex-grow: 1;
+                display: flex;
+                height: 100%;
+                aspect-ratio: auto !important;
+                object-fit: cover;
+
+                @media screen and (max-width: 890px) {
+                    //display: none !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media screen and (max-width: 890px) {
+            display: flex !important;
+
+            > div:first-of-type {
+                display: none !important;
+            }
+
+            .customimg,
+            .specificwidth {
+                display: none !important;
+            }
+
+            img {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
+
+.secondifx {
+    aspect-ratio: 20/28 !important;
+    object-fit: cover !important;
+    object-position: top center;
+}
+
+.specificwidth2 {
+    display: none;
+
+    @media screen and (min-width: 1000px) and (max-width: 1280px) {
+        display: block;
+    }
+}
+
+.specificwidth {
+    @media screen and (min-width: 1000px) and (max-width: 1280px) {
+        display: none;
+    }
+}
+
+.wtf-show {
+    display: none !important;
+
+    @media screen and (max-width: 1024px) {
+        display: block !important;
+    }
+}
+
+.diss {
+    @media screen and (max-width: 1024px) {
+        display: none !important;
+    }
+}
+
+.text-100 {
+    font-size: 60px;
+
+    @media screen and (max-width: 650px) {
+        font-size: 40px;
+    }
+}
+
+.phone {
+    position: relative;
+    z-index: 1;
+    width: 326px;
+    @media screen and (min-width: 1024px) {
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1535px) {
+        width: 100%;
+    }
+    &:after{
+        content: '';
+        z-index: -1;
+        width: calc(100% + 14px);
+        height: calc(100% + 14px);
+        background-color: black;
+        left: 50%;
+        position: absolute;
+        border-radius: 30px;
+        top: 50%;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    @media screen and (max-width: 769px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.wttf{
+    @media screen and (max-width: 890px) {
+        display: none !important;
+    }
+}
+
+.usecase-item{
+    @media screen and (max-width: 769px) {
+        flex-direction: column-reverse !important;
+    }
+}
+
+.usecase-title{
+    font-size: 3em !important;
+    @media screen and (max-width: 767px) {
+        font-size: 2.3em !important;
+    }
+}
+
+.cenik__item-ok{
+    list-style-type: auto !important;
+}
+
+.cusotmimg{
+    @media screen and (max-width: 890px) {
+        display: none !important;
+    }
+}

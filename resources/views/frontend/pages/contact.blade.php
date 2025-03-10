@@ -71,7 +71,7 @@
                     <a href="mailto:adam.bosak@arstore.cz">adam.bosak@arstore.cz</a>
                 </div>
             </div>
-            <p class="copyright">Copyright ©<span id="copyright"></span> Onixia solutions s.r.o. Všechna
+            <p class="copyright">Copyright ©<span id="copyright">{{ now()->year }}</span> Onixia solutions s.r.o. Všechna
                 práva vyhrazena</p>
         </footer>
     @endsection

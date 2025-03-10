@@ -34,7 +34,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
 
-    <meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="{{ asset('apple-touch-icon.png') }}" />
     <meta name="theme-color" content="#ffffff" />
 
